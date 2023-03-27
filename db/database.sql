@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS`todopordb`
+
+CREATE TABLE `empleado` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(50) NULL DEFAULT NULL COLLATE 'latin1_general_ci',
+	`salary` INT(5) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='latin1_general_ci'
+ENGINE=InnoDB
+;
